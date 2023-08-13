@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Chart.Name }}
+  namespace: default
+data:
+  .env: |-
+    HELLO_BACKEND_URL=http://hello-backend
+  

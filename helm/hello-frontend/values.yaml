@@ -1,0 +1,11 @@
+replicaCount: 1
+
+image:
+  repository: oglagovskiy/hello-frontend
+  tag: "latest"
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: http
